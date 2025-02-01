@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSphere - Emergency Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+            width: 100%;
+        }
+
+        .emergency-services-button {
+            background-color: red;
+        }
+
+        .contact-button {
+            background-color: blue;
+        }
+
+        .back-button {
+            background-color: grey;
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 600px) {
+            button {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Emergency Services</h1>
+    <button class="emergency-services-button" onclick="callEmergency('police')">Call Police</button>
+    <button class="emergency-services-button" onclick="callEmergency('ambulance')">Call Ambulance</button>
+    <button class="emergency-services-button" onclick="callEmergency('fireforce')">Call Fire Force</button>
+
+    <h2>Immediate Contacts</h2>
+    <button class="contact-button" onclick="callEmergencyContact('contact1')">Call Contact 1</button>
+    <button class="contact-button" onclick="callEmergencyContact('contact2')">Call Contact 2</button>
+
+    <button class="back-button" onclick="window.history.back();">Go Back</button>
+
+    <script>
+        function callEmergency(service) {
+            if (service === 'police') {
+                window.location.href = "tel:100"; // Call police
+            } else if (service === 'ambulance') {
+                window.location.href = "tel:102"; // Call ambulance
+            } else if (service === 'fireforce') {
+                window.location.href = "tel:101"; // Call fire force
+            }
+        }
+
+        function callEmergencyContact(contact) {
+            if (contact === 'contact1') {
+                window.location.href = "tel:+1234567890"; // Replace with actual contact number
+            } else if (contact === 'contact2') {
+                window.location.href = "tel:+0987654321"; // Replace with actual contact number
+            }
+        }
+    </script>
+</body>
+</html>

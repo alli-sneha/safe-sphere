@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSphere - Emergency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .intro-text, .info-section, .safety-tips, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+            width: 45%;
+        }
+
+        .emergency-button {
+            background-color: red;
+        }
+
+        .home-button {
+            background-color: green;
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 600px) {
+            button {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: 80%;
+                margin: 10px 0;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .intro-text, .info-section, .safety-tips, footer {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Welcome and Instructions Section -->
+    <div class="intro-text">
+        <h2>Welcome to SafeSphere</h2>
+        <p>Stay safe and use the emergency options in case of any emergency. Click on the buttons below for quick assistance.</p>
+    </div>
+
+    <!-- Emergency Info Section -->
+    <div class="info-section">
+        <p><strong>Emergency:</strong> Press this button to alert your emergency contacts and authorities.</p>
+        <p><strong>I Reached Home:</strong> Press this button to notify your contacts that you've reached home safely.</p>
+    </div>
+
+    <!-- Emergency and Reached Home Buttons -->
+    <div class="button-container">
+        <a href="index4.html">
+            <button class="emergency-button">Emergency</button>
+        </a>
+        <a href="index5.html">
+            <button class="home-button">I Reached Home</button>
+        </a>
+    </div>
+
+    <!-- Safety Tips Section -->
+    <div class="safety-tips">
+        <h3>Quick Safety Tips</h3>
+        <ul>
+            <li>Stay aware of your surroundings at all times.</li>
+            <li>Keep your phone fully charged.</li>
+            <li>Trust your instincts and avoid risky situations.</li>
+            <li>If you feel unsafe, use the emergency button.</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>SafeSphere ©️ 2025 | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
